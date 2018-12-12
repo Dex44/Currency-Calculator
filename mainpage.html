@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta cahrset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Money Transfer</title>
+        <script src="Script.js"></script>
+        <link rel="stylesheet" href="Style.css">
+    </head>
+    <body>
+        <div>
+            <img src="Images/Western%20Union%20Outbound%20-Oct5-23-23-page-001.jpeg" id="home">
+            <p id="text1">Send Amount</p>
+            <p id="text2">Receive Amount</p>
+            <select onchange="select(); convert()" id="selection">
+                <option value="Dollar">Dollar</option>
+                <option value="Euro">Euro</option>
+                <option value="Yen">Yen</option>
+                <option value="Pound">Pound</option>     
+            </select>
+            <input type="number" id="textbox2" disabled="disabled"  value="">
+            <input type="number" id="textbox1" value="" oninput="convert()">
+            <img src="Images/Dollar-PNG-Free-Download.png" id="dollar">
+            <img src="Images/rupee.png" id="rupee">
+            <img src="Images/arrow.png" id="arrow1">
+            <img src="Images/arrow.png" id="arrow2">
+            <a href="https://www.westernunion.com/in/en/send-money/app/register">
+            <button id="click">Send</button>
+            </a>
+            <p id="value">1 Dollar = 72.06 Rupee</p>
+            <p id="deduction">10% Of Whole Value is deducted<br> as Service Charge</p>
+            
+        </div>
+    </body>
+        
+        
